@@ -1,12 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="湖畔の小さな宿 森の灯りロッジ。客室プラン、アクセス、予約案内をご確認いただけます。" />
+  <title>森の灯りロッジ | 宿泊施設</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --primary: #325a44;
+      --accent: #c78f4e;
+      --text: #1f2a24;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #294a38 0%, #3e6f55 40%, #6f916f 100%);
+      color: #fff;
+      padding: 4.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 0.6rem; font-size: clamp(2rem, 5vw, 3rem); }
+    .container { max-width: 980px; margin: 0 auto; padding: 2rem 1.2rem 3rem; }
+    .lead { text-align: center; margin-bottom: 2rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: var(--card);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .price { font-weight: 700; color: var(--primary); }
+    .section-title {
+      border-left: 5px solid var(--accent);
+      padding-left: 0.6rem;
+      margin: 2rem 0 1rem;
+    }
+    .cta {
+      background: var(--primary);
+      color: #fff;
+      border-radius: 10px;
+      padding: 1.2rem;
+      text-align: center;
+    }
+    .cta a {
+      display: inline-block;
+      margin-top: 0.6rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.6rem 1rem;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #4f5c53;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Site</h1>
-    <p>This is my first GitHub Pages deployment!</p>
+  <header>
+    <h1>森の灯りロッジ</h1>
+    <p>湖畔の静けさに包まれる、1日6組限定の小さな宿</p>
+  </header>
+
+  <main class="container">
+    <p class="lead">焚き火ラウンジ・地元食材の朝食・天然温泉。週末のリトリートに最適です。</p>
+
+    <h2 class="section-title">客室プラン</h2>
+    <section class="grid" aria-label="客室プラン一覧">
+      <article class="card">
+        <h3>スタンダードツイン</h3>
+        <p>木の温もりを感じるベーシックなお部屋。</p>
+        <p class="price">1泊 16,000円〜 / 2名</p>
+      </article>
+      <article class="card">
+        <h3>レイクビュースイート</h3>
+        <p>大きな窓から湖を一望できる人気のお部屋。</p>
+        <p class="price">1泊 28,000円〜 / 2名</p>
+      </article>
+      <article class="card">
+        <h3>ファミリーロフト</h3>
+        <p>4名まで宿泊可能。お子さま連れにも安心。</p>
+        <p class="price">1泊 24,000円〜 / 4名</p>
+      </article>
+    </section>
+
+    <h2 class="section-title">アクセス</h2>
+    <div class="card">
+      <p>〒399-0000 長野県○○町 湖畔1-2-3</p>
+      <p>JR○○駅から送迎バスで20分（要予約）</p>
+      <p>チェックイン 15:00 / チェックアウト 10:00</p>
+    </div>
+
+    <section class="cta" aria-label="予約案内">
+      <h2>ご予約・お問い合わせ</h2>
+      <p>お電話: 0120-000-123（9:00〜20:00）</p>
+      <a href="mailto:stay@morinoakari.jp">メールで問い合わせる</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 森の灯りロッジ All Rights Reserved.
+  </footer>
 </body>
 </html>
